@@ -1,13 +1,13 @@
 import React from "react";
 import logo from "./logo.svg";
 import "./App.css";
-import ".components/topnav.jsx";
-import ".components/body.jsx";
+import Topnav from "./components/topnav.jsx";
+import Body from "./components/body.jsx";
 
 function App() {
   return (
     <div className="App">
-      <TopNav />
+      <Topnav />
       <Body />
       {/* <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
