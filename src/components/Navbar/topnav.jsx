@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import "./topnav.css";
-import Link from "./link.jsx";
 import Links from "./links.jsx";
 
 //export on one line

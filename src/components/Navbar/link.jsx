@@ -19,7 +19,7 @@ class Link extends Component {
       let new_active = this.props.active;
       let { active } = this.state;
       active = new_active;
-      console.log("ResetStateTriggered");
+      //console.log("ResetStateTriggered");
       this.setState({ active: active });
 
       let new_className = active == true ? "active" : "";

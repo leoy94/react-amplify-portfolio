@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import logo from "./logo.svg";
 import "./App.css";
-import Topnav from "./components/topnav.jsx";
-import Body from "./components/body.jsx";
+import Topnav from "./components/Navbar/topnav.jsx";
+import Body from "./components/Body/body.jsx";
 
 class App extends Component {
   state = {
