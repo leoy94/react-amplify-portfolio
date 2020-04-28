@@ -49,6 +49,7 @@ class Body extends Component {
               </p>
             </div>
           </div>
+          <h2>If Youre Reading This, I love you MOM!</h2>
         </div>
       </div>
     );

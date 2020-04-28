@@ -1,18 +1,13 @@
 import React, { Component } from "react";
 import "./topnav.css";
+import Link from "./link.jsx";
+import Links from "./links.jsx";
 
 //export on one line
 //export default class topnav extends Component
 class Topnav extends Component {
   state = {
-    currenttab: 2,
     icontoggle: false,
-    links: [
-      { label: "Home", link: "#home", className: "active" },
-      { label: "Personal", link: "header-link" },
-      { label: "Resume", link: "header-link" },
-      { label: "Portfolio", link: "header-link" },
-    ],
   };
 
   formatHeader = (linksmarkup) => {
@@ -21,27 +16,27 @@ class Topnav extends Component {
       return (
         <div className="topnav">
           {linksmarkup}
-          <a
+          <div
             href="javascript:void(0);"
             className="icon"
             onClick={this.handleToggle}
           >
             <i class="fa fa-bars"></i>
-          </a>
+          </div>
         </div>
       );
     } else {
       return (
         <div className="topnav responsive">
           {linksmarkup}
-          <a
+          <div
             href="javascript:void(0);"
             className="icon"
             onClick={this.handleToggle}
           >
             <i class="fa fa-bars"></i>
             {this.handleToggle}
-          </a>
+          </div>
         </div>
       );
     }
@@ -60,19 +55,8 @@ class Topnav extends Component {
   };
 
   render = () => {
-    const linksmarkup = this.state.links.map((link, index) => {
-      return (
-        <a
-          className={link.className}
-          href={link.link}
-          onClick=""
-          key={link.label}
-        >
-          {link.label}
-        </a>
-      );
-    });
-
+    let linksmarkup = <Links />;
+    console.log(linksmarkup);
     return this.formatHeader(linksmarkup);
   };
 }
