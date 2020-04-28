@@ -14,7 +14,7 @@ class Topnav extends Component {
     const { icontoggle } = this.state;
     if (icontoggle == false) {
       return (
-        <div className="topnav">
+        <div className="topnav" key="topnav">
           {linksmarkup}
           <div
             href="javascript:void(0);"
@@ -27,7 +27,7 @@ class Topnav extends Component {
       );
     } else {
       return (
-        <div className="topnav responsive">
+        <div className="topnav responsive" key="topnav">
           {linksmarkup}
           <div
             href="javascript:void(0);"
@@ -55,9 +55,7 @@ class Topnav extends Component {
   };
 
   render = () => {
-    let linksmarkup = <Links />;
-    console.log(linksmarkup);
-    return this.formatHeader(linksmarkup);
+    return this.formatHeader(<Links />);
   };
 }
 
