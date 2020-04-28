@@ -2,7 +2,11 @@ import React, { Component } from "react";
 import "./body.css";
 
 class Body extends Component {
-  // state = {  }
+  state = {};
+
+  //array for rows
+  //imbedded array for columns (or "items")
+
   render() {
     return (
       <div className="row">
