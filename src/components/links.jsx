@@ -5,7 +5,7 @@ import Link from "./link.jsx";
 
 class Links extends Link {
   state = {
-    currenttab: 3,
+    currenttab: "Home",
     links: [
       {
         id: "Home",
@@ -52,15 +52,26 @@ class Links extends Link {
     return links;
   };
 
+  handleCurrentTabChange = (currenttab) => {
+    this.props.action(currenttab);
+  };
+
   handleCurrentTab = (target) => {
     // console.log(target);
     let { currenttab } = this.state;
     currenttab = target;
-    console.log("Tab " + currenttab + " Was Clicked!");
+
+    //this following line is for debugging
+    // console.log("Tab " + currenttab + " Was Clicked!");
+
     let newlinks = this.resetClass(currenttab);
     this.setState({ currenttab: currenttab });
     this.setState({ links: newlinks });
+    this.handleCurrentTabChange(currenttab);
     this.render();
+
+    //this following lines are for debugging
+    /*
     this.state.links.map((link) => {
       console.log(
         "Link Name " +
@@ -71,6 +82,7 @@ class Links extends Link {
           link.active
       );
     });
+    */
   };
 
   render = () => {

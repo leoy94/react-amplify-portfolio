@@ -8,6 +8,7 @@ import Links from "./links.jsx";
 class Topnav extends Component {
   state = {
     icontoggle: false,
+    currenttab: "Home",
   };
 
   formatHeader = (linksmarkup) => {
@@ -54,8 +55,22 @@ class Topnav extends Component {
     return { icontoggle };
   };
 
+  handleCurrentTabChange = (target) => {
+    this.props.action(target);
+  };
+
+  handleCurrentTab = (target) => {
+    // console.log(target);
+    // console.log("handleCurrentTab");
+    let { currenttab } = this.state;
+    currenttab = target;
+    this.setState({ currenttab: currenttab });
+    this.handleCurrentTabChange(currenttab);
+    this.render();
+  };
+
   render = () => {
-    return this.formatHeader(<Links />);
+    return this.formatHeader(<Links action={this.handleCurrentTab} />);
   };
 }
 
