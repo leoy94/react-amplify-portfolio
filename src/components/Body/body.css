@@ -81,25 +81,13 @@ h1 {
 
 @media screen and (max-width: 900px) {
   .row {
-    flex-direction: row;
-    justify-content: center;
+    flex-direction: row;  
   }
   .column {
     display:flex;
     flex-direction: column; 
-
     width: 48%;
     padding: 1%;
-  }
-
-  .column:last-child
-  {
-    display:flex;
-    flex-direction: column; 
-    flex-grow: 3;
-    /* height: 80%; */
-    padding: 10px;
-    margin: 0;
   }
 }
 
@@ -113,7 +101,7 @@ h1 {
     align-items: center;
   }
   .column {
-    width: 90%;
+    width: 100%;
   }
 }
 

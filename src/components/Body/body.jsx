@@ -7,6 +7,7 @@ class Body extends Component {
     currenttab: this.props.currenttab,
     rows: [],
     columns: [{id:1, text:""},{id:2, text:""},{id:3, text:""},{id:4, text:""}],
+    columns2: [{id:5, text:""},{id:6, text:""},{id:7, text:""},{id:8, text:""}],
     columnsperrow: 3
   };
 
@@ -31,8 +32,8 @@ class Body extends Component {
     }
   }
 
-  renderColumns = (text) => {
-    let columns = this.state.columns.map((column) => {
+  renderColumns = (text, columns) => {
+    columns = columns.map((column) => {
         //************NOTSURE IF FUNCTIONAL YET */
         if(column.text!=""){
          //do something
@@ -58,9 +59,15 @@ class Body extends Component {
 
   
   renderRows = () => {
-    return(
-              <div className="row">
-                  {this.renderColumns()}
+    let {columns} = this.state;
+    let {columns2} = this.state;
+    return( <div>
+                    <div className="row">
+                        {this.renderColumns("",columns)}
+                    </div>
+                    <div className="row">
+                        {this.renderColumns("",columns2)}}
+                    </div>        
               </div>
     );
   }
@@ -70,7 +77,7 @@ class Body extends Component {
     return (
       <div>
         <div>{this.renderHeaderTitle()}</div>
-        <div>{this.renderRows()}{this.renderRows()}</div>
+        <div>{this.renderRows()}</div>
       </div>
     );
 
