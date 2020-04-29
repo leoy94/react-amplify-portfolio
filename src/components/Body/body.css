@@ -2,14 +2,24 @@
   box-sizing: border-box;
 }
 
+body {
+  background-size: 100%;
+  margin: 0;
+  
+
+}
+
+h1 {
+  height: 8vh;
+  text-align: center;
+  padding: 1vh;
+  background-size: cover;
+}
+
 .row {
   display: flex;
   justify-content: center;
   /* align-items: stretch; */
-}
-
-body {
-  margin: 0;
 }
 
 /* Create three unequal columns that floats next to each other */
