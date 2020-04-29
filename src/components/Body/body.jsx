@@ -70,7 +70,7 @@ class Body extends Component {
     return (
       <div>
         <div>{this.renderHeaderTitle()}</div>
-        <div>{this.renderRows()}</div>
+        <div>{this.renderRows()}{this.renderRows()}</div>
       </div>
     );
 
