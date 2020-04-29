@@ -10,7 +10,7 @@ body {
 }
 
 h1 {
-  height: 8vh;
+  height: 100%;
   text-align: center;
   padding: 1vh;
   background-size: cover;
@@ -18,15 +18,22 @@ h1 {
 
 .row {
   display: flex;
+  flex-direction: row;
   justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 1%;
   /* align-items: stretch; */
 }
 
 /* Create three unequal columns that floats next to each other */
 .column {
-  float: left;
-  width: 33.33%;
-  padding: 10px;
+  display:flex;
+  flex-direction: column; 
+
+  width: 23%;
+  /* height: 80%; */
+  padding: 1% 1% 1% 1%;
 }
 
 /* Left and right column */
@@ -35,9 +42,9 @@ h1 {
 } */
 
 /* Middle column */
-.column.middle {
-  width: 100%;
-}
+/* .column.middle {
+  /* width: 100%; 
+} */
 
 /* Clear floats after the columns */
 .row:after {
@@ -47,6 +54,55 @@ h1 {
 }
 
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 1200px) {
+  .row {
+    flex-direction: row;
+    justify-content: center;
+  }
+  .column {
+    display:flex;
+    flex-direction: column; 
+
+    width: 31%;
+    /* height: 80%; */
+    padding: 1%;
+  }
+
+  .column:last-child
+  {
+    display:flex;
+    flex-direction: column; 
+    flex-grow: 3;
+    /* height: 80%; */
+    padding: 10px;
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .row {
+    flex-direction: row;
+    justify-content: center;
+  }
+  .column {
+    display:flex;
+    flex-direction: column; 
+
+    width: 48%;
+    padding: 1%;
+  }
+
+  .column:last-child
+  {
+    display:flex;
+    flex-direction: column; 
+    flex-grow: 3;
+    /* height: 80%; */
+    padding: 10px;
+    margin: 0;
+  }
+}
+
 @media screen and (max-width: 600px) {
   /* .column.side,
   .column.middle {

@@ -6,7 +6,7 @@ class Body extends Component {
   state = {
     currenttab: this.props.currenttab,
     rows: [],
-    columns: [{id:1, text:""},{id:2, text:""},{id:3, text:""}],
+    columns: [{id:1, text:""},{id:2, text:""},{id:3, text:""},{id:4, text:""}],
     columnsperrow: 3
   };
 
@@ -24,10 +24,10 @@ class Body extends Component {
 
     } 
     if(currenttab=="Home"){
-    return <h1 style={{backgroundColor: '#a32727', color: 'white', marginTop: '0'}}>{currenttab}</h1>
+    return <h1 style={{backgroundColor: 'rgb(163,39,39, 0.90)', color: 'white', marginTop: '0'}}>{currenttab}</h1>
     }
     else{
-      return <h1 style={{color: 'white', marginTop: '0', backgroundImage: `url(${homeHeader})`, backgroundRepeat: 'no-repeat', backgroundSize: 'cover'}}>{currenttab}</h1>
+      return <h1 style={{backgroundColor: 'rgb(51,51,51, 0.90)',color: 'white', marginTop: '0',backgroundRepeat: 'no-repeat', backgroundSize: 'cover'}}>{currenttab}</h1> //backgroundImage: `url(${homeHeader})`
     }
   }
 
@@ -59,16 +59,9 @@ class Body extends Component {
   
   renderRows = () => {
     return(
-      <div className="row">
-        <div className="column middle">
-          {/* <h2>Main Content</h2> */}
-          
-          <div className="row">
-          {this.renderColumns()}
-          </div>
-          <h2>If Youre Reading This, I love you MOM!</h2>
-        </div>
-      </div>
+              <div className="row">
+                  {this.renderColumns()}
+              </div>
     );
   }
 
