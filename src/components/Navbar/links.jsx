@@ -1,3 +1,6 @@
+//Layth Yousif 4/28/2020
+//This jsx file defines the structure of a List of Links
+//The class defines nav bar links and updates them when they have been clicked
 import React, { Component } from "react";
 import "./topnav.css";
 import Link from "./link.jsx";
@@ -42,48 +45,49 @@ class Links extends Link {
     ],
   };
 
-  //called by 
+  //called by handeCurrentTab
+  //resets each of the links classes based 
+  //on if they are active or inactive - active = false or true
+  //and sets the class name
+  //classes and states used for css styling and dynamic rendering
   resetClass = (currenttab) => {
     let links = (this.state.links = this.state.links.map((link) => {
       link.active = currenttab == link.label ? true : false;
       link.className = link.active == true ? "active" : "";
-      // console.log(link.active);
       return link;
     }));
     return links;
   };
 
+  //called by handeCurrentTab
+  //calls ascenting function embedded in the prop object
+  //this sets the current tab attribure for the topnav's state
   handleCurrentTabChange = (currenttab) => {
     this.props.action(currenttab);
   };
 
+
+  //called by handleClick in ./link.jsx; passed into the Link Component as method via the render method
+  //used for on click of each nav bar item
+  //calls resetClass to set the active state &  class state(used for css styling)
+  //updates the state of each link 
   handleCurrentTab = (target) => {
-    // console.log(target);
+
     let { currenttab } = this.state;
     currenttab = target;
 
-    //this following line is for debugging
-    // console.log("Tab " + currenttab + " Was Clicked!");
-
+    //invokes resetClass to set the active class (used for css styling)
     let newlinks = this.resetClass(currenttab);
+
+    //updates the state of each link 
     this.setState({ currenttab: currenttab });
     this.setState({ links: newlinks });
+    
+    //invokes ascenting function
+    //calls ascenting function embedded in the prop object
+    //this sets the current tab attribure for the topnav's state
     this.handleCurrentTabChange(currenttab);
-    this.render();
-
-    //this following lines are for debugging
-    /*
-    this.state.links.map((link) => {
-      console.log(
-        "Link Name " +
-          link.label +
-          " Link Class " +
-          link.className +
-          " Link Active " +
-          link.active
-      );
-    });
-    */
+    // this.render(); //this line is unncessary
   };
 
   render = () => {

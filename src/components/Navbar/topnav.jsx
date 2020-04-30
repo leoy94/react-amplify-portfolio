@@ -5,8 +5,7 @@ import React, { Component } from "react";
 import "./topnav.css";
 import Links from "./links.jsx";
 
-//export on one line
-//export default class topnav extends Component
+//export class definition on one line //export default class topnav extends Component
 
 //this class defines nav bar links and updates them when they have been clicked
 class Topnav extends Component {
@@ -67,8 +66,6 @@ class Topnav extends Component {
   };
   
   handleCurrentTab = (target) => {
-    // console.log(target);
-    // console.log("handleCurrentTab");
     let { currenttab } = this.state;
     //this takes care of most of the all of the code that is commented below
     currenttab = target;
@@ -80,7 +77,7 @@ class Topnav extends Component {
     this.handleCurrentTabChange(currenttab);
     
     this.setState({ currenttab: currenttab });
-    this.render();
+    // this.render(); //this line is unncessary
   };
 
   render = () => {

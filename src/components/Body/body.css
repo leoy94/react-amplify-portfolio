@@ -1,39 +1,37 @@
 * {
-  box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 body {
-  background-size: 100%;
-  margin: 0;
-  
-
+	background-size: 100%;
+	margin: 0;
 }
 
 h1 {
-  height: 100%;
-  text-align: center;
-  padding: 1vh;
-  background-size: cover;
+	height: 100%;
+	text-align: center;
+	padding: 1vh;
+	background-size: cover;
 }
 
 .row {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  margin: 1%;
-  /* align-items: stretch; */
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: stretch;
+	flex-wrap: wrap;
+	margin: 0;
+	/* align-items: stretch; */
 }
 
 /* Create three unequal columns that floats next to each other */
 .column {
-  display:flex;
-  flex-direction: column; 
-
-  width: 23%;
-  /* height: 80%; */
-  padding: 1% 1% 1% 1%;
+	display: flex;
+	flex-direction: column;
+	margin: 0;
+	width: 23%;
+	/* height: 80%; */
+	padding: 1% 1% 1% 1%;
 }
 
 /* Left and right column */
@@ -48,73 +46,72 @@ h1 {
 
 /* Clear floats after the columns */
 .row:after {
-  content: "";
-  display: table;
-  clear: both;
+	content: "";
+	display: table;
+	clear: both;
 }
 
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 1200px) {
-  .row {
-    flex-direction: row;
-    justify-content: center;
-  }
-  .column {
-    display:flex;
-    flex-direction: column; 
+	.row {
+		flex-direction: row;
+		justify-content: center;
+	}
+	.column {
+		display: flex;
+		flex-direction: column;
 
-    width: 31%;
-    /* height: 80%; */
-    padding: 1%;
-  }
+		width: 31%;
+		/* height: 80%; */
+		padding: 1%;
+	}
 
-  .column:last-child
-  {
-    display:flex;
-    flex-direction: column; 
-    flex-grow: 3;
-    /* height: 80%; */
-    padding: 10px;
-    margin: 0;
-  }
+	.column:last-child {
+		display: flex;
+		flex-direction: column;
+		flex-grow: 3;
+		/* height: 80%; */
+		padding: 10px;
+		margin: 0;
+	}
 }
 
 @media screen and (max-width: 900px) {
-  .row {
-    flex-direction: row;  
-  }
-  .column {
-    display:flex;
-    flex-direction: column; 
-    width: 48%;
-    padding: 1%;
-  }
+	.row {
+		flex-direction: row;
+	}
+	.column {
+		display: flex;
+		flex-direction: column;
+		width: 48%;
+		padding: 1%;
+	}
 }
 
 @media screen and (max-width: 600px) {
-  /* .column.side,
+	/* .column.side,
   .column.middle {
     width: 100%;
   } */
-  .row {
-    flex-direction: column;
-    align-items: center;
-  }
-  .column {
-    width: 100%;
-  }
+	.row {
+		flex-direction: column;
+		align-items: center;
+	}
+	.column {
+		width: 100%;
+	}
 }
 
 @media screen and (max-width: 450px) {
-  /* .column.side,
+	/* .column.side,
   .column.middle {
     width: 100%;
   } */
-  .row {
-    flex-direction: column;
-    align-items: center;
-  }
-  .column {
-    width: 90%;
-  }
+	.row {
+		flex-direction: column;
+		align-items: center;
+	}
+	.column {
+		width: 90%;
+	}
 }

@@ -4,7 +4,6 @@
 import React, { Component } from "react";
 
 //The Link class defines a nav bar links and updates when they it has been clicked
-//It invokes the 
 class Link extends Component {
   state = {
     id: this.props.id,
@@ -17,11 +16,14 @@ class Link extends Component {
 
   //uses the state_id to call the handleCurrentTabClick method in ./links.jsx
   //via the props. action object passed in from ./links.jsx
+  //when it envokes handleCurrentTabClick react will update the necessary state 
+  //depending on which embedded attributes changed
   handleClick = () => {
     return this.props.action(this.state.id);
   };
 
   //sets the active state & class state(used for css styling)
+  //reset is dynamically rendered on change
   resetState = () => {
     if (this.props.active != this.state.active) {
       let new_active = this.props.active;
