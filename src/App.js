@@ -19,7 +19,7 @@ class App extends Component {
 	render = () => {
 		return (
 			<div className="App">
-				<Topnav action={this.handleAppCurrentTab} />
+				<Topnav action={this.handleAppCurrentTab} currenttab={this.state.currenttab} />
 				<Body currenttab={this.state.currenttab} />
 			</div>
 		);

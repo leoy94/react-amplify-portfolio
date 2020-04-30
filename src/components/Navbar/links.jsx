@@ -8,7 +8,6 @@ import Link from './link.jsx';
 //this class defines nav bar links and updates them when they have been clicked
 class Links extends Link {
 	state = {
-		currenttab: 'Home',
 		links: [
 			{
 				id: 'Home',
@@ -78,14 +77,12 @@ class Links extends Link {
 		let newlinks = this.resetClass(currenttab);
 
 		//updates the state of each link
-		this.setState({ currenttab: currenttab });
 		this.setState({ links: newlinks });
 
 		//invokes ascenting function
 		//calls ascenting function embedded in the prop object
 		//this sets the current tab attribure for the topnav's state
 		this.handleCurrentTabChange(currenttab);
-		// this.render(); //this line is unncessary
 	};
 
 	render = () => {
