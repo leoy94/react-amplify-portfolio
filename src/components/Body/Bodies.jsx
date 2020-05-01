@@ -6,21 +6,26 @@ class Bodies extends Component {
 		bodies: [
 			{
 				className: 'Home',
+				id: 'Home-Body',
 				active: this.props.currenttab == 'Home' ? true : false,
 				columns: [
 					{
 						id: 'Home-Overview',
 						text: (
-							<div>
-								<h1>Welcome</h1>
-								<h1>I'm Layth Yousif,</h1>
-								<h1>Software Developer.</h1>
-							</div>
+							<React.Fragment>
+								<div className="text">
+									<h1>Welcome,</h1>
+									<h1>I'm Layth Yousif,</h1>
+									<h1>Software Developer.</h1>
+								</div>
+								<div className="smallertext">Pega CSSA / CSS / Javascript / React / Python / SQL</div>
+							</React.Fragment>
 						)
 					},
 					{
-						id: 'Home-Image',
-						text: 'This is my home tab!' //should change to content
+						id: 'Home-HeadShot',
+						text: '',
+						picture: true //should change to content
 					}
 				]
 			},
@@ -29,7 +34,7 @@ class Bodies extends Component {
 				active: this.props.currenttab == 'Personal' ? true : false,
 				columns: [
 					{
-						id: 'Personal-1',
+						id: 'Personal-Overview',
 						text: (
 							<div>
 								<h1>Personal</h1>
@@ -44,6 +49,7 @@ class Bodies extends Component {
 			},
 			{
 				className: 'Resume',
+				id: 'Resume-Body',
 				active: this.props.currenttab == 'Resume' ? true : false,
 				columns: [
 					{
@@ -62,6 +68,7 @@ class Bodies extends Component {
 			},
 			{
 				className: 'Portfolio',
+				id: 'Portfolio-Body',
 				active: this.props.currenttab == 'Portfolio' ? true : false,
 				columns: [
 					{
@@ -98,7 +105,7 @@ class Bodies extends Component {
 		this.handleActiveBodyState();
 		let currenbodies = this.state.bodies.map((body) => {
 			if (body.active != false) {
-				return <Body body={body} currenttab={this.props.currenttab} />;
+				return <Body key={body.id} id={body.id} body={body} currenttab={this.props.currenttab} />;
 			}
 		});
 

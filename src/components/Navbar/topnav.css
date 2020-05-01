@@ -50,6 +50,8 @@
 @media screen and (max-width: 600px) {
 	.topnav.responsive {
 		position: relative;
+		display: flex;
+		flex-direction: column;
 	}
 	.topnav.responsive .icon {
 		position: absolute;

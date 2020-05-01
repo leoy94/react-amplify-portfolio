@@ -1,0 +1,103 @@
+#Home-Body {
+	display: flex;
+	justify-content: center;
+}
+
+#Home-Body .row {
+	height: 95vh;
+	width: 95vw;
+
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	margin: 1% 0 1%, 0;
+	background: rgba(130, 89, 89, 0.08);
+	padding: 3% 0 3% 0;
+}
+
+/* Create three unequal columns that floats next to each other */
+#Home-Body .column {
+	display: flex;
+	flex-direction: column;
+	background: rgba(95, 83, 83, .2);
+	color: white;
+	justify-content: center;
+}
+#Home-Overview {
+	width: 60%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+#Home-Overview .smallertext {
+	color: #f5b9b9;
+	font-size: 1vw;
+}
+
+.text > h1 {
+	font-size: 4vw;
+	padding-left: 0%;
+	text-align: left;
+}
+
+#Home-HeadShot {
+	width: 40%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+#Home-HeadShot img {
+	padding-right: 2%;
+	max-width: 80%;
+	height: auto;
+
+	/* /* Height: 100%;  */
+}
+
+@media screen and (max-width: 600px) {
+	#Home-Body .row {
+		height: 95vh;
+		width: 95vw;
+
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-end;
+		align-items: center;
+		margin: 1% 0 1%, 0;
+		background: rgba(130, 89, 89, 0.08);
+		padding: 3% 0 3% 0;
+		flex-direction: column-reverse;
+	}
+
+	#Home-HeadShot {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		align-content: center;
+	}
+
+	#Home-Overview {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		margin-top: 2vh;
+	}
+
+	#Home-HeadShot img {
+		padding-right: 2%;
+		max-width: 60%;
+		height: auto;
+
+		/* /* Height: 100%;  */
+	}
+
+	#Home-Overview .smallertext {
+		color: #f5b9b9;
+		font-size: 1.5vw;
+	}
+}

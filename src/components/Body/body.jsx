@@ -12,10 +12,13 @@ class Body extends Component {
 
 	render() {
 		const { columns } = this.props.body;
+		const { id } = this.props.body;
 		return (
 			<React.Fragment>
-				{/* {this.renderHeaderTitle()} */}
-				<Content columns={columns} currenttab={this.props.currenttab} />
+				<div id={id} key={id}>
+					{/* {this.renderHeaderTitle()} */}
+					<Content columns={columns} currenttab={this.props.currenttab} />
+				</div>
 			</React.Fragment>
 		);
 		// return this.renderBody();

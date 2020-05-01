@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import './body.css';
+import './HomeBody.css';
+import Headshot from './Headshot.png';
 
 class Content extends Component {
 	state = {};
@@ -39,26 +41,25 @@ class Content extends Component {
 			if (column.text != '') {
 				//do something
 			} else {
-				column.text =
-					' Lorem ipsum dolor sit amet, consectetur adipiscing elit' +
-					'Maecenas sit amet pretium urna. Vivamus venenatis velit nec' +
-					'neque ultricies, eget elementum magna tristique. Quisque' +
-					'vehicula, risus eget aliquam placerat, purus leo tincidunt eros' +
-					'eget luctus quam orci in velit. Praesent scelerisque tortor sed' +
-					'accumsan convallis.';
+				// column.text =
+				// 	' Lorem ipsum dolor sit amet, consectetur adipiscing elit' +
+				// 	'Maecenas sit amet pretium urna. Vivamus venenatis velit nec' +
+				// 	'neque ultricies, eget elementum magna tristique. Quisque' +
+				// 	'vehicula, risus eget aliquam placerat, purus leo tincidunt eros' +
+				// 	'eget luctus quam orci in velit. Praesent scelerisque tortor sed' +
+				// 	'accumsan convallis.';
 			}
 
 			let new_columntext = column.text;
+			let image = '';
+			if (column.picture == true) {
+				image = <img id="Headshot" src={Headshot} />;
+			}
 
 			return (
-				<div
-					className="column"
-					id={column.id}
-					key={column.id}
-					style={{ color: 'black', marginTop: '0', backgroundColor: 'rgb(163,39,39, 0.20)', margin: '1%' }}
-				>
-					{/* <h2 id={column.id}>Column {column.id}</h2> */}
-					<p>{new_columntext}</p>
+				<div className="column" id={column.id} key={column.id}>
+					{image}
+					{new_columntext}
 				</div>
 			);
 		});
@@ -76,11 +77,7 @@ class Content extends Component {
 	};
 
 	render = () => {
-		return (
-			<React.Fragment>
-				<div>{this.renderRows()}</div>
-			</React.Fragment>
-		);
+		return <React.Fragment>{this.renderRows()}</React.Fragment>;
 	};
 }
 
