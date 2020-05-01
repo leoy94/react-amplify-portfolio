@@ -18,9 +18,9 @@ class Links extends Link {
 				active: true
 			},
 			{
-				id: 'Personal',
+				id: 'Portfolio',
 				linkkey: '2',
-				label: 'Personal',
+				label: 'Portfolio',
 				className: '',
 				link: 'header-link',
 				active: false
@@ -33,10 +33,11 @@ class Links extends Link {
 				link: 'header-link',
 				active: false
 			},
+
 			{
-				id: 'Portfolio',
+				id: 'Personal',
 				linkkey: '4',
-				label: 'Portfolio',
+				label: 'Personal',
 				className: '',
 				link: 'header-link',
 				active: false

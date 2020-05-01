@@ -1,16 +1,20 @@
 .topnav {
 	overflow: hidden;
-	background-color: #333;
+	background-color: rgb(66, 50, 50);
 }
 
 /* Style the topnav links */
-.topnav div {
-	float: left;
+.topnav > div {
+	float: right;
 	display: block;
 	color: #f2f2f2;
 	text-align: center;
 	padding: 14px 16px;
 	text-decoration: none;
+}
+
+.topnav #Home {
+	float: left;
 }
 
 /* Change color on hover */
@@ -24,7 +28,8 @@
 }
 
 .topnav div.active {
-	background-color: #a32727;
+	/* background-color: rgb(66, 50, 50); */
+	background-color: rgb(220, 220, 220, 0.25);
 	color: white;
 }
 

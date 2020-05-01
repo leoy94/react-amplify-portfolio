@@ -2,8 +2,13 @@
 	box-sizing: border-box;
 }
 
+.html {
+	font-size: 62.5%;
+}
+
 body {
 	background-size: 100%;
+	background-color: rgb(66, 50, 50);
 	margin: 0;
 }
 
@@ -29,11 +34,18 @@ h1 {
 	display: flex;
 	flex-direction: column;
 	margin: 0;
-	width: 23%;
+	width: 45%;
 	/* height: 80%; */
 	padding: 1% 1% 1% 1%;
 }
 
+.column > h2 {
+}
+
+.column > p {
+	display: flex;
+	flex-direction: column;
+}
 /* Left and right column */
 /* .column.side {
   width: 25%;
@@ -86,6 +98,15 @@ h1 {
 		width: 48%;
 		padding: 1%;
 	}
+
+	#overview {
+		display: flex;
+		flex-direction: column;
+		width: 20%;
+		padding: 1%;
+		height: 7000%;
+		/* height: 30rem; */
+	}
 }
 
 @media screen and (max-width: 600px) {
@@ -98,7 +119,17 @@ h1 {
 		align-items: center;
 	}
 	.column {
-		width: 100%;
+		width: 98%;
+		height: 89%;
+	}
+
+	#overview {
+		display: flex;
+		flex-direction: column;
+		width: 20%;
+		padding: 1%;
+		/* height: 100%; */
+		/* height: 30rem; */
 	}
 }
 
@@ -113,5 +144,14 @@ h1 {
 	}
 	.column {
 		width: 90%;
+	}
+
+	#overview {
+		display: flex;
+		flex-direction: column;
+		width: 20%;
+		padding: 1%;
+		height: 100%;
+		/* height: 30rem; */
 	}
 }
