@@ -69,11 +69,7 @@ class Content extends Component {
 	renderRows = () => {
 		let { columns } = this.props;
 		let { columns2 } = this.props;
-		return (
-			<React.Fragment>
-				<div className="row">{this.renderColumns('', columns)}</div>
-			</React.Fragment>
-		);
+		return <React.Fragment>{this.renderColumns('', columns)}</React.Fragment>;
 	};
 
 	render = () => {
