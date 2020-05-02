@@ -10,6 +10,31 @@ body {
 	align-items: stretch;
 	background: rgba(130, 89, 89, 0.08);
 	margin: 10px;
+
+	animation-name: home-text;
+	animation-duration: .5s;
+}
+
+@keyframes home-text {
+	0% {
+		opacity: 0.0;
+	}
+
+	25% {
+		opacity: 0.25;
+	}
+
+	50% {
+		opacity: 0.5;
+	}
+
+	75% {
+		opacity: 0.75;
+	}
+
+	100% {
+		opacity: 1;
+	}
 }
 
 #Home-Overview {
@@ -64,8 +89,6 @@ body {
 	padding: 1vw 0vw 1vw 0;
 	min-width: 50%;
 	max-width: 60%;
-	/* max-width: 60%; */
-	/* Height: 100%; */
 }
 
 @media screen and (max-width: 1900px) {
