@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
 import './body.css';
 import './HomeBody.css';
+import './PersonalBody.css';
 import Headshot from './Headshot.png';
+import Personal from './Personal-Header.jpg';
 
 class Content extends Component {
 	state = {};

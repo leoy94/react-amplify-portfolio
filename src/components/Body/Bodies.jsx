@@ -31,15 +31,12 @@ class Bodies extends Component {
 			},
 			{
 				className: 'Personal',
+				id: 'Personal-Body',
 				active: this.props.currenttab == 'Personal' ? true : false,
 				columns: [
 					{
 						id: 'Personal-Overview',
-						text: (
-							<div>
-								<h1>Personal</h1>
-							</div>
-						)
+						text: <h1 id="Personal-Overview-Text">Personal</h1>
 					},
 					{
 						id: 'Personal-Image',
