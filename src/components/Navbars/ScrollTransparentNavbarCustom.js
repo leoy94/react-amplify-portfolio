@@ -233,7 +233,7 @@ function ScrollTransparentNavbar() {
                 <Button
                   className="nav-link btn-default"
                   color={buyButtonColor}
-                  href="/contact-us" //"https://www.creative-tim.com/product/now-ui-kit-pro-react?ref=nuk-pro-react-scroll-transparent-navbar"
+                  href="./contact-us"
                   target=""
                 >
                   <p>Contact Me</p>

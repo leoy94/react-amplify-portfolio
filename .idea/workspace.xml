@@ -1,108 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f48381f6-a493-4f71-a7a4-46d63d9d0630" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/CustomUpload/ImageUpload.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Footers/Footer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Footers/FooterBlack.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Footers/FooterBlackSocial.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Footers/FooterDefault.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Footers/FooterSocial.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Headers/AboutUsHeader.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Headers/BlogPostHeader.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Headers/BlogPostsHeader.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Headers/ContactUsHeader.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Headers/EcommerceHeader.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Headers/IndexHeader.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Headers/LandingPageHeader.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Headers/PresentationHeader.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Headers/PricingHeader.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Headers/ProductPageHeader.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Headers/ProfilePageHeader.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Navbars/DropdownFixedNavbar.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Navbars/DropdownScrollNavbar.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Navbars/DropdownWhiteNavbar.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Navbars/FixedTransparentNavbar.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Navbars/ScrollTransparentNavbar.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Navbars/ScrollTransparentNavbarCustom.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Navbars/WhiteNavbar.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/gulpfile.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/views/Index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/views/NucleoIcons.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/views/Presentation.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/views/Sections.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/views/examples/AboutUs.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/views/examples/BlogPost.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/views/examples/BlogPosts.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/views/examples/ContactUs.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/views/examples/Ecommerce.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/views/examples/LandingPage.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/views/examples/LoginPage.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/views/examples/Pricing.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/views/examples/ProductPage.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/views/examples/ProfilePage.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/views/examples/SignupPage.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/views/index-sections/Basic.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/views/index-sections/Cards.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/views/index-sections/Carousel.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/views/index-sections/ContentAreas.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/views/index-sections/FileUploader.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/views/index-sections/Footers.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/views/index-sections/Images.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/views/index-sections/Javascript.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/views/index-sections/Navbars.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/views/index-sections/Notifications.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/views/index-sections/NucleoIcons.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/views/index-sections/Pagination.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/views/index-sections/Pills.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/views/index-sections/PlainCards.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/views/index-sections/PreFooter.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/views/index-sections/Tabs.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/views/index-sections/Typography.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/views/presentation-sections/BasicComponents.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/views/presentation-sections/Cards.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/views/presentation-sections/Components.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/views/presentation-sections/Content.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/views/presentation-sections/Examples.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/views/presentation-sections/FreeDemo.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/views/presentation-sections/Icons.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/views/presentation-sections/Image.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/views/presentation-sections/Pricing.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/views/presentation-sections/Sections.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/views/presentation-sections/Testimonials.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/views/sections-sections/Blogs.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/views/sections-sections/ContactUs.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/views/sections-sections/Features.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/views/sections-sections/Headers.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/views/sections-sections/Pricing.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/views/sections-sections/Projects.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/views/sections-sections/Teams.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/views/sections-sections/Testimonials.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Body/Bodies.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Body/Headshot.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Body/Headshot.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Body/HomeBody.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Body/Personal-Header.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Body/PersonalBody.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Body/body.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Body/body.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Body/content.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Body/css_bodyScratchpag" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Body/draft-1.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Body/draft-3.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Body/home-header-1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Body/resumetemplate.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Navbar/link.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Navbar/links.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Navbar/topnav.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Navbar/topnav.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+    <list default="true" id="f48381f6-a493-4f71-a7a4-46d63d9d0630" name="Default Changelist" comment="Added Now UI Kit Pro Assets">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Navbars/ScrollTransparentNavbarCustom.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navbars/ScrollTransparentNavbarCustom.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -144,8 +45,16 @@
       <option name="presentableId" value="Default" />
       <updated>1606785946851</updated>
       <workItem from="1606785948667" duration="1263000" />
-      <workItem from="1606787242190" duration="434000" />
+      <workItem from="1606787242190" duration="1214000" />
     </task>
+    <task id="LOCAL-00001" summary="Added Now UI Kit Pro Assets">
+      <created>1606787880719</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1606787880719</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -162,6 +71,10 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Added Now UI Kit Pro Assets" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Now UI Kit Pro Assets" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
