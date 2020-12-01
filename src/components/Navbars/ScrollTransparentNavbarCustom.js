@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import {Link, Route} from "react-router-dom";
 // reactstrap components
 import {
   Button,
@@ -15,6 +15,8 @@ import {
   Container,
   UncontrolledTooltip,
 } from "reactstrap";
+
+import ContactUs from "../../views/examples/ContactUs";
 
 function ScrollTransparentNavbar() {
   const [collapseOpen, setCollapseOpen] = React.useState(false);
@@ -233,8 +235,9 @@ function ScrollTransparentNavbar() {
                 <Button
                   className="nav-link btn-default"
                   color={buyButtonColor}
-                  href="./contact-us"
+                  href="contact-us"
                   target=""
+                  onClick={<Route path="/contact-us" render={(props) => <ContactUs {...props} />} />}
                 >
                   <p>Contact Me</p>
                 </Button>
