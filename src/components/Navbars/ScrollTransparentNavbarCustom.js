@@ -112,18 +112,18 @@ function ScrollTransparentNavbar() {
                  </DropdownMenu>
               </UncontrolledDropdown>
               <NavItem>
-                {/*<Button*/}
-                {/*  className="nav-link btn-default"*/}
-                {/*  color={buyButtonColor}*/}
-                {/*  href=""*/}
-                {/*  target=""*/}
-                {/*  tag={Link}*/}
-                {/*  to="/contact-us"*/}
-                {/*>*/}
-                {/*  <p>Contact Me</p>*/}
-                {/*</Button>*/}
+                <Button
+                  className="nav-link btn-default"
+                  color={buyButtonColor}
+                  href=""
+                  target=""
+                  tag={Link}
+                  to="/contact-me"
+                >
+                  <p>Contact Me</p>
+                </Button>
 
-                <NavLink href="/contact-me">Contact Us</NavLink>
+                {/*<NavLink href="/contact-me">Contact Us</NavLink>*/}
 
               </NavItem>
             </Nav>
