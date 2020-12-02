@@ -123,7 +123,7 @@ function ScrollTransparentNavbar() {
                 {/*  <p>Contact Me</p>*/}
                 {/*</Button>*/}
 
-                <NavLink href="/contact-me" {...props}>Contact Us</NavLink>
+                <NavLink href="/contact-me">Contact Us</NavLink>
 
               </NavItem>
             </Nav>
