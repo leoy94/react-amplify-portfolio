@@ -12,6 +12,7 @@ import {
   Navbar,
   NavItem,
   Nav,
+  NavLink,
   Container,
   UncontrolledTooltip,
 } from "reactstrap";
@@ -106,19 +107,24 @@ function ScrollTransparentNavbar() {
                   </DropdownItem>
                   <DropdownItem to="/contact-me" tag={Link}>
                     <i className="now-ui-icons business_chart-pie-36"></i>
-                    All components
+                    Contact Me
                   </DropdownItem>
                  </DropdownMenu>
               </UncontrolledDropdown>
               <NavItem>
-                <Button
-                  className="nav-link btn-default"
-                  color={buyButtonColor}
-                  href="/contact-me"
-                  target=""
-                >
-                  <p>Contact Me</p>
-                </Button>
+                {/*<Button*/}
+                {/*  className="nav-link btn-default"*/}
+                {/*  color={buyButtonColor}*/}
+                {/*  href=""*/}
+                {/*  target=""*/}
+                {/*  tag={Link}*/}
+                {/*  to="/contact-us"*/}
+                {/*>*/}
+                {/*  <p>Contact Me</p>*/}
+                {/*</Button>*/}
+
+                <NavLink href="/contact-me" {...props}>Contact Us</NavLink>
+
               </NavItem>
             </Nav>
           </Collapse>
