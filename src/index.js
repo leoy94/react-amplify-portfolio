@@ -26,14 +26,14 @@ import "assets/demo/react-demo.css?v=1.4.0";
 import "assets/demo/nucleo-icons-page-styles.css?v=1.4.0";
 
 // pages
-import ContactUs from "views/examples/ContactUs.js";
 import Index from "views/Index.js";
+import ContactUs from "views/examples/ContactUs.js";
 import ProfilePage from "views/examples/ProfilePage.js";
 
 ReactDOM.render(
   <BrowserRouter>
     <Switch>
-      <Route path="/contact-us" render={(props) => <ContactUs {...props} />} />
+      <Route path="/contact-me" render={(props) => <ContactUs {...props} />} />
       <Route path="/index" render={(props) => <Index {...props} />} />
       <Route
         path="/profile-page"

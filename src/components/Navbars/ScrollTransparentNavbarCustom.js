@@ -104,13 +104,17 @@ function ScrollTransparentNavbar() {
                     <i className="now-ui-icons business_chart-pie-36"></i>
                     All components
                   </DropdownItem>
+                  <DropdownItem to="/contact-me" tag={Link}>
+                    <i className="now-ui-icons business_chart-pie-36"></i>
+                    All components
+                  </DropdownItem>
                  </DropdownMenu>
               </UncontrolledDropdown>
               <NavItem>
                 <Button
                   className="nav-link btn-default"
                   color={buyButtonColor}
-                  href="./contact-us"
+                  href="/contact-me"
                   target=""
                 >
                   <p>Contact Me</p>

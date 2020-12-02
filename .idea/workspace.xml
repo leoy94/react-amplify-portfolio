@@ -54,7 +54,7 @@
       <workItem from="1606785948667" duration="1263000" />
       <workItem from="1606787242190" duration="1809000" />
       <workItem from="1606844769756" duration="2757000" />
-      <workItem from="1606874180339" duration="363000" />
+      <workItem from="1606874180339" duration="1141000" />
     </task>
     <task id="LOCAL-00001" summary="Added Now UI Kit Pro Assets">
       <created>1606787880719</created>
@@ -77,7 +77,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606845197207</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="testing contacting me button break">
+      <created>1606874565144</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1606874565144</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -99,7 +106,8 @@
     <MESSAGE value="Added Now UI Kit Pro Assets" />
     <MESSAGE value="trying to fix contact me bug" />
     <MESSAGE value="testing button breaking" />
-    <option name="LAST_COMMIT_MESSAGE" value="testing button breaking" />
+    <MESSAGE value="testing contacting me button break" />
+    <option name="LAST_COMMIT_MESSAGE" value="testing contacting me button break" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
