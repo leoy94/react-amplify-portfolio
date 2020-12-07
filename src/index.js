@@ -29,12 +29,15 @@ import "assets/demo/nucleo-icons-page-styles.css?v=1.4.0";
 import Index from "views/Index.js";
 import ContactUs from "views/examples/ContactUs.js";
 import ProfilePage from "views/examples/ProfilePage.js";
+import ProductPage from "./views/examples/ProductPage";
 
 ReactDOM.render(
   <BrowserRouter>
     <Switch>
       <Route path="/contact-me" render={(props) => <ContactUs {...props} />} />
-      <Route path="/index" render={(props) => <Index {...props} />} />
+      {/*<Route path="/index" render={(props) => <Index {...props} />} />*/}
+      <Route path="/resume" render={props => <ProductPage {...props} />} />
+
       <Route
         path="/profile-page"
         render={(props) => <ProfilePage {...props} />}

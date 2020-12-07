@@ -4,6 +4,9 @@
     <list default="true" id="f48381f6-a493-4f71-a7a4-46d63d9d0630" name="Default Changelist" comment="trying to fix contact me bug">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Navbars/ScrollTransparentNavbarCustom.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navbars/ScrollTransparentNavbarCustom.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/examples/ProductPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/examples/ProductPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/examples/ProfilePage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/examples/ProfilePage.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,7 +56,9 @@
       <workItem from="1606785948667" duration="1263000" />
       <workItem from="1606787242190" duration="1809000" />
       <workItem from="1606844769756" duration="2757000" />
-      <workItem from="1606874180339" duration="3552000" />
+      <workItem from="1606874180339" duration="5568000" />
+      <workItem from="1607035143531" duration="46000" />
+      <workItem from="1607358738246" duration="1267000" />
     </task>
     <task id="LOCAL-00001" summary="Added Now UI Kit Pro Assets">
       <created>1606787880719</created>
@@ -104,7 +109,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606877508702</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="attempting link link">
+      <created>1606877797443</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1606877797443</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -128,7 +140,8 @@
     <MESSAGE value="testing button breaking" />
     <MESSAGE value="testing contacting me button break" />
     <MESSAGE value="attempting navlink" />
-    <option name="LAST_COMMIT_MESSAGE" value="attempting navlink" />
+    <MESSAGE value="attempting link link" />
+    <option name="LAST_COMMIT_MESSAGE" value="attempting link link" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -137,6 +150,12 @@
           <url>file://$PROJECT_DIR$/src/components/Navbars/ScrollTransparentNavbar.js</url>
           <line>3</line>
           <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/views/examples/ProductPage.js</url>
+          <line>24</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

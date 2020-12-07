@@ -72,62 +72,59 @@ function ScrollTransparentNavbar() {
             <UncontrolledTooltip target="navbar-brand">
               Designed by Layth Yousif
             </UncontrolledTooltip>
-            <button
-              onClick={() => {
-                document.documentElement.classList.toggle("nav-open");
-                setCollapseOpen(!collapseOpen);
-              }}
-              aria-expanded={collapseOpen}
-              className="navbar-toggler"
-            >
-              <span className="navbar-toggler-bar top-bar"></span>
-              <span className="navbar-toggler-bar middle-bar"></span>
-              <span className="navbar-toggler-bar bottom-bar"></span>
-            </button>
+            {/*<button*/}
+            {/*  onClick={() => {*/}
+            {/*    document.documentElement.classList.toggle("nav-open");*/}
+            {/*    setCollapseOpen(!collapseOpen);*/}
+            {/*  }}*/}
+            {/*  aria-expanded={collapseOpen}*/}
+            {/*  className="navbar-toggler"*/}
+            {/*>*/}
+            {/*  <span className="navbar-toggler-bar top-bar"></span>*/}
+            {/*  <span className="navbar-toggler-bar middle-bar"></span>*/}
+            {/*  <span className="navbar-toggler-bar bottom-bar"></span>*/}
+            {/*</button>*/}
           </div>
-          <Collapse isOpen={collapseOpen} navbar>
-            <Nav className="ml-auto" id="ceva" navbar>
-              <UncontrolledDropdown nav>
-                <DropdownToggle
-                  caret
-                  color="default"
-                  data-toggle="dropdown"
-                  href="#pablo"
-                  id="navbarDropdownMenuLink1"
-                  nav
-                  onClick={(e) => e.preventDefault()}
-                >
-                  <i className="now-ui-icons design_app"></i>
-                  <p>About Me</p>
-                </DropdownToggle>
-                <DropdownMenu aria-labelledby="navbarDropdownMenuLink1" right>
-                  <DropdownItem to="/index" tag={Link}>
-                    <i className="now-ui-icons business_chart-pie-36"></i>
-                    All components
-                  </DropdownItem>
-                  <DropdownItem to="/contact-me" tag={Link}>
-                    <i className="now-ui-icons business_chart-pie-36"></i>
-                    Contact Me
-                  </DropdownItem>
-                 </DropdownMenu>
-              </UncontrolledDropdown>
-              <NavItem>
-                <Button
-                  className="nav-link btn-default"
-                  color={buyButtonColor}
-                  href=""
-                  target=""
-                  tag={Link}
-                  to="/contact-me"
-                >
-                  <p>Contact Me</p>
-                </Button>
-
-                {/*<NavLink href="/contact-me">Contact Us</NavLink>*/}
-
-              </NavItem>
-            </Nav>
-          </Collapse>
+          {/*<Collapse isOpen={collapseOpen} navbar>*/}
+          {/*  <Nav className="ml-auto" id="ceva" navbar>*/}
+          {/*    <UncontrolledDropdown nav>*/}
+          {/*      <DropdownToggle*/}
+          {/*        caret*/}
+          {/*        color="default"*/}
+          {/*        data-toggle="dropdown"*/}
+          {/*        href="#pablo"*/}
+          {/*        id="navbarDropdownMenuLink1"*/}
+          {/*        nav*/}
+          {/*        onClick={(e) => e.preventDefault()}*/}
+          {/*      >*/}
+          {/*        <i className="now-ui-icons design_app"></i>*/}
+          {/*        <p>About Me</p>*/}
+          {/*      </DropdownToggle>*/}
+          {/*      <DropdownMenu aria-labelledby="navbarDropdownMenuLink1" right>*/}
+          {/*        /!*<DropdownItem to="/index" tag={Link}>*!/*/}
+          {/*        /!*  <i className="now-ui-icons business_chart-pie-36"></i>*!/*/}
+          {/*        /!*  Introduction*!/*/}
+          {/*        /!*</DropdownItem>*!/*/}
+          {/*        <DropdownItem to="/resume" tag={Link}>*/}
+          {/*          <i className="now-ui-icons business_chart-pie-36"></i>*/}
+          {/*          Resume*/}
+          {/*        </DropdownItem>*/}
+          {/*       </DropdownMenu>*/}
+          {/*    </UncontrolledDropdown>*/}
+          {/*    /!*<NavItem>*!/*/}
+          {/*    /!*  <Button*!/*/}
+          {/*    /!*    className="nav-link btn-default"*!/*/}
+          {/*    /!*    color={buyButtonColor}*!/*/}
+          {/*    /!*    href=""*!/*/}
+          {/*    /!*    target=""*!/*/}
+          {/*    /!*    tag={Link}*!/*/}
+          {/*    /!*    to="/contact-me"*!/*/}
+          {/*    /!*  >*!/*/}
+          {/*    /!*    <p>Contact Me</p>*!/*/}
+          {/*    /!*  </Button>*!/*/}
+          {/*    /!*</NavItem>*!/*/}
+          {/*  </Nav>*/}
+          {/*</Collapse>*/}
         </Container>
       </Navbar>
     </>
